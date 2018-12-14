@@ -8,6 +8,7 @@ RUN apk add --update-cache \
     bash \
     curl \
     git \
+    ansible \
   && pip install --upgrade pip \
   && pip install virtualenv \
   && rm -rf /var/cache/apk/*
