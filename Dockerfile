@@ -1,16 +1,6 @@
-FROM alpine:latest
+FROM sot001/python-base:latest
 
-RUN apk add --update-cache \
-    python \
-    python-dev \
-    py-pip \
-    build-base \
-    bash \
-    curl \
-    git \
-    ansible \
-  && pip install --upgrade pip \
-  && pip install virtualenv \
+RUN apk add --update-cache ansible 
   && rm -rf /var/cache/apk/*
 
 
